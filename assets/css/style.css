@@ -57,43 +57,41 @@ html{
     color: white;
     font-weight: 300;
     font-family: "Santio";
+    font-size: 25px;
     letter-spacing: 0.1dvh    
 }
 
 a{
     font-style: normal;
-    font color: white; 
+    color: white; 
 }
 
 .paralax{
-    position: relative;
+    position: center;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
-}
-
-section:nth-of-type(1) {    
     background-image: url(../img/cleo-topper.jpg);
-    background-size:  100vw;
-
 }
+
+h2{
+    font-size: 3rem;
+}
+
+/* Ende style fürs gesamtes html */
+
 
 section:nth-of-type(2){
     background-image: url(../img/see.png);
-    background-size:  100vw;
-    width: 100vw;
+    background-size:  cover;
 }
 
 section:nth-of-type(3){
     background-color: black;
     color: white;
+    height: 80vh;
 }
-
-
-
-/* Ende style fürs gesamtes html */
 
 header{
     background: transparent;
@@ -116,9 +114,7 @@ li{
     font-size: 0.8rem;
 }
 
-footer p a{
-    color: #6BC1A3;
-}
+
 
 .MrDafoe{
     font-family: "MrDafoe";
@@ -132,14 +128,10 @@ b{
     color: white;  
 }
 
-
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 0.6rem;
-    font-weight: 200;
+article{
+    height: 60vh;
 }
+
 
 .green_text p{
     color: #6BC1A3;
@@ -159,8 +151,31 @@ footer{
 
 .health{
     color: #6BC1A3;
+    
 }
 
 .blue_text{
     color: #7EB8E1;
+}
+
+.icon{
+    height: 80px;
+    width: 80px;
+
+}
+
+.kids{
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 200;
+}
+
+footer p a{
+    color: #6BC1A3;
 }
