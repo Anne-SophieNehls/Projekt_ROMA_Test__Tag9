@@ -55,16 +55,11 @@
 
 html{
     color: white;
-    font-weight: 300;
     font-family: "Santio";
     font-size: 25px;
     letter-spacing: 0.5dvh    
 }
 
-a{
-    font-style: normal;
-    color: white; 
-}
 
 .paralax{
     position: center;
@@ -75,28 +70,7 @@ a{
     background-image: url(../img/cleo-topper.jpg);
 }
 
-h2{
-    font-size: 3rem;
-    max-width: 250px;
-    margin-left: 10%;
-    margin-bottom: 8%;
-}
-
-h3{
-    max-width: 35%;
-}
-
 /* Ende style fürs gesamtes html */
-section:nth-of-type(1){
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-}
-
-section:nth-of-type(2){
-    background-image: url(../img/see.png);
-    background-size:  cover;
-}
 
 
 header{
@@ -121,6 +95,43 @@ li{
     list-style: none;
 }
 
+a{
+    font-style: normal;
+    color: white; 
+}
+
+section:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+section:nth-of-type(2){
+    background-image: url(../img/see.png);
+    background-size:  cover;
+}
+
+article{
+    height: 80vh;
+    padding: 10%;
+}
+
+p{
+    font-weight: 600;
+}
+
+h2{
+    font-size: 3rem;
+    max-width: 250px;
+    margin-left: 10%;
+    margin-bottom: 8%;
+}
+
+h3{
+    font-size: 2.3rem;
+    max-width: 35%;
+}
+
 b{
     background-color: #333333;
     letter-spacing: 0.2rem;  
@@ -135,12 +146,8 @@ b{
     padding-top: 5px;
  }
 
-article{
-    height: 80vh;
-    padding: 10%;
-}
-
 .start{
+    height: 700px;
     padding: 10px;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -150,55 +157,61 @@ article{
     font-family: "MrDafoe";
     color: #E7BC0E;
     font-size: 0.8rem;
+    font-weight: 400;
     padding-left: 10%;
-
 }
 
-.green_text p{
-    line-height: 1.2rem;
-    color: #6BC1A3;
-/*     padding-top: 50%
- */}
-
 .green_text{
-    max-width: 650px;
-    margin-left: 5%;
+    max-width: 40%;
+    margin-left: 10%;
+    margin-bottom: 100px;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #6BC1A3;
+}
+
+.bigger_text{
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+}
+
+.big_text{
+    font-size: 2.3rem;
+    line-height: 2.5rem;
 }
 
 .workers{
     color: #E7BC0E;
     line-height: 1.2rem;
-    max-width: 500px;
-    margin-left: 10%;
+    max-width: 50%;
+    margin-left: 15%;
 }
 
 .pay{
     color: #CB91B6;
     line-height: 1.2rem;
-    max-width: 500px;
-    margin-left: 10%;
+    max-width: 50%;
+    margin-left: 15%;
 }
 
 .health{
     color: #6BC1A3;
     line-height: 1.2rem;
-    max-width: 500px;
-    margin-left: 10%;
+    max-width: 50%;
+    margin-left: 15%;
 }
 
 .blue_text{
     font-size: 0.8rem;
     line-height: 1rem;
-
     color: #7EB8E1;
-    max-width: 550px;
-    margin-left: 10%;
+    max-width: 40%;
+    margin-left: 15%;
 }
 
 .icon{
     height: 80px;
     width: 80px;
-
 }
 
 .kids{
@@ -208,7 +221,7 @@ article{
 }
 
 .end{
-    margin-left: 12%;
+    margin-left: 15%;
     line-height: 2.8rem;
 
 }
@@ -216,12 +229,9 @@ article{
 section:nth-of-type(3){
     background-color: black;
     color: white;
-    height: 80vh;
+    height: 600px;
     font-size: 2rem;
-    border-top: 80px solid black;
-    border-bottom: 40px solid black;
-/*     padding-top: 15%;
-    padding-bottom: 5%; */ /* ? Ich hätte das hier gerne mit margin oder padding gemacht, aber die Hintergrundfarbe wurde bei diesen Abständen nicht übernommen, stattdesshen hatte man das Hintergundbild bei den abständen wieder gesehen, genauso, wenn man es ins .end gepackt hat. Ich weiß, die lösung ist jetzt unschamand, aber besser bekomme ich das nun leider nicht hin*/
+    border-top: 100px solid black;
 }
 
 button{
@@ -242,9 +252,12 @@ footer{
     color: white;
     text-align: center;
     font-size: 0.6rem;
-    font-weight: 200;
     border: 20px solid black;
     padding-top: 10%;
+}
+
+footer p{
+    font-weight: 100;
 }
 
 footer p a{
