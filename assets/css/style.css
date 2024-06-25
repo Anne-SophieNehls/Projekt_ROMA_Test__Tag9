@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Santio";
+    src: url("../font/Santio\ regular.ttf");
+/*  src: url("../font/Santio\ light.ttf");
+    src: url("../font/Santio\ Inline.ttf");
+    src: url("../font/Santio\ Boldline.ttf");
+    src: url("../font/Santio\ Bold.ttf");
+    src: url("../font/Santio\ Black.ttf"); */
+/* ? ich bin mir sehr unsicher, ob das so funklionieren würde, wenn die gesamte Font Family in einem font-face ist. Deswegen noch mal alles einzeln*/
+}
+@font-face {
+    font-family: "Santio Light";
+    src: url("../font/Santio\ light.ttf");
+}
+
+@font-face {
+    font-family: "Santio Inline";
+    src: url("../font/Santio\ Inline.ttf");
+}
+
+@font-face {
+    font-family:"Santio Boldline" ;
+    src: url("../font/Santio\ Boldline.ttf");
+}
+
+@font-face {
+    font-family: "Santio Bold";
+    src: url("../font/Santio\ Bold.ttf");
+}
+
+@font-face {
+    font-family: "Santio Black";
+    src: url("../font/Santio\ Black.ttf"); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.paralax{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+section:nth-of-type(1) {    
+    background-image: url(../img/cleo-topper.jpg);
+    background-size:  100dvw;
+
+}
+
+section:nth-of-type(2){
+    background-image: url(../img/see.png);
+    background-size:  100dvw;
+
+}
+
+/* Ende style fürs gesammte html */
+
+header{
+    display: flex;
+
+}
