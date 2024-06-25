@@ -58,7 +58,7 @@ html{
     font-weight: 300;
     font-family: "Santio";
     font-size: 25px;
-    letter-spacing: 0.1dvh    
+    letter-spacing: 0.5dvh    
 }
 
 a{
@@ -76,7 +76,14 @@ a{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.8rem;
+    max-width: 20%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+h3{
+    max-width: 35%;
 }
 
 /* Ende style fürs gesamtes html */
@@ -87,15 +94,10 @@ section:nth-of-type(2){
     background-size:  cover;
 }
 
-section:nth-of-type(3){
-    background-color: black;
-    color: white;
-    height: 80vh;
-}
 
 header{
     background: transparent;
-    padding: 5px 5%;
+    padding: 10px 6%;
     font-weight: 500;
     display: flex;
     flex-direction: row ;
@@ -112,9 +114,13 @@ header>img{
 li{
     text-decoration: underline #E7BC0E;
     font-size: 0.8rem;
+    list-style: none;
 }
 
-
+article{
+    height: 80vh;
+    padding: 10%;
+}
 
 .MrDafoe{
     font-family: "MrDafoe";
@@ -124,38 +130,38 @@ li{
 
 b{
     background-color: #333333;
-    letter-spacing: 0.5dvh;  
-    color: white;  
-}
-
-article{
-    height: 60vh;
-}
-
+    letter-spacing: 0.2rem;  
+    color: white;
+/*     border: 2px solid #333333;  
+ */}
 
 .green_text p{
+    max-width: 60%;
     color: #6BC1A3;
 }
 
 .green_text{
-
+    max-width: 60%;
 }
 
 .workers{
     color: #E7BC0E;
+    max-width: 60%;
 }
 
 .pay{
     color: #CB91B6;
+    max-width: 60%;
 }
 
 .health{
     color: #6BC1A3;
-    
+    max-width: 60%; 
 }
 
 .blue_text{
     color: #7EB8E1;
+    max-width: 60%;
 }
 
 .icon{
@@ -166,6 +172,36 @@ article{
 
 .kids{
     width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.end{
+    margin-left: 10%;
+}
+
+section:nth-of-type(3){
+    background-color: black;
+    color: white;
+    height: 80vh;
+    font-size: 2rem;
+    border-top: 80px solid black;
+    border-bottom: 40px solid black;
+/*     padding-top: 15%;
+    padding-bottom: 5%; */ /* ? Ich hätte das hier gerne mit margin oder padding gemacht, aber die Hintergrundfarbe wurde bei diesen Abständen nicht übernommen, stattdesshen hatte man das Hintergundbild bei den abständen wieder gesehen, genauso, wenn man es ins .end gepackt hat. Ich weiß, die lösung ist jetzt unschamand, aber besser bekomme ich das nun leider nicht hin*/
+}
+
+button{
+    height: 35px;
+    width: 80px;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    margin-top: 40px;
+}
+
+button:hover{
+    box-shadow: white 5px 5px;
 }
 
 footer{
@@ -174,6 +210,8 @@ footer{
     text-align: center;
     font-size: 0.6rem;
     font-weight: 200;
+    border: 20px solid black;
+    padding-top: 10%;
 }
 
 footer p a{
