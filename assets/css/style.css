@@ -1,4 +1,9 @@
 @font-face {
+    font-family: "MrDafoe";
+    src: url("../font/MrDafoe-Regular.ttf");
+}
+
+@font-face {
     font-family: "Santio";
     src: url("../font/Santio\ regular.ttf");
 /*  src: url("../font/Santio\ light.ttf");
@@ -48,6 +53,18 @@
     --last-color: #7EB8E1;
 }
 
+html{
+    color: white;
+    font-weight: 300;
+    font-family: "Santio";
+    letter-spacing: 0.1dvh    
+}
+
+a{
+    font-style: normal;
+    font color: white; 
+}
+
 .paralax{
     position: relative;
     background-attachment: fixed;
@@ -59,13 +76,14 @@
 
 section:nth-of-type(1) {    
     background-image: url(../img/cleo-topper.jpg);
-    background-size:  100dvw;
+    background-size:  100vw;
 
 }
 
 section:nth-of-type(2){
     background-image: url(../img/see.png);
-    background-size:  100dvw;
+    background-size:  100vw;
+    width: 100vw;
 }
 
 section:nth-of-type(3){
@@ -73,18 +91,76 @@ section:nth-of-type(3){
     color: white;
 }
 
-footer{
-    background-color: black;
-    color: white;
-}
 
-/* Ende style fürs gesammte html */
+
+/* Ende style fürs gesamtes html */
 
 header{
+    background: transparent;
+    padding: 5px 5%;
+    font-weight: 500;
     display: flex;
+    flex-direction: row ;
+    justify-content: flex-end;
+    align-content: center;
+}
 
+header>img{
+    height: 20px ;
+    width: 20px;
+    margin: 0 2%;
+}
+
+li{
+    text-decoration: underline #E7BC0E;
+    font-size: 0.8rem;
 }
 
 footer p a{
     color: #6BC1A3;
+}
+
+.MrDafoe{
+    font-family: "MrDafoe";
+    color: #E7BC0E;
+    font-size: 0.8rem;
+}
+
+b{
+    background-color: #333333;
+    letter-spacing: 0.5dvh;  
+    color: white;  
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 200;
+}
+
+.green_text p{
+    color: #6BC1A3;
+}
+
+.green_text{
+
+}
+
+.workers{
+    color: #E7BC0E;
+}
+
+.pay{
+    color: #CB91B6;
+}
+
+.health{
+    color: #6BC1A3;
+}
+
+.blue_text{
+    color: #7EB8E1;
 }
